@@ -13,9 +13,9 @@ do
     a = Convert.ToInt32(Console.ReadLine());
     if (a == 1)
     {
-        Console.WriteLine("Угадайте число от 1 до 100");
+        Console.WriteLine("Угадайте число от 0 до 100");
         Random g = new Random();
-        int c = g.Next(101);
+        int c = g.Next(-1, 101);
         while (true)
         {
             Console.WriteLine("Введите ваше число:");
